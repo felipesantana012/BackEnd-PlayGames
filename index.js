@@ -10,11 +10,10 @@ app.use(express.json());
 const conn = require("./db/conn");
 conn();
 
-
-//Rotas
-app.get("/", (req, res) => {
-  res.send("Pagina pricipal Aplicação Games");
-});
+// //Rotas
+// app.get("/", (req, res) => {
+//   res.send("Pagina pricipal Aplicação Games");
+// });
 
 const routes = require("./routes/router");
 app.use("/", routes);
